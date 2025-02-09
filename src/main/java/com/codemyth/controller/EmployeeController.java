@@ -56,6 +56,7 @@ public class EmployeeController {
         return ResponseEntity.noContent().build();
 
     }
+//Delete the data
 
     @DeleteMapping("/deleteAll")
 
@@ -64,7 +65,7 @@ public class EmployeeController {
         return ResponseEntity.noContent().build();
     }
 
-
+//gte the data from city
     @GetMapping("/City/{city}")
     public ResponseEntity<List<Employee>> findCity(@PathVariable String city){
         List<Employee> ci=employeeService.findByCity(city);
